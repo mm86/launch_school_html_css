@@ -36,3 +36,7 @@ header a {
   font-style: normal;
   font-weight: bold;
 }
+
+main {
+  width: 696px;
+}
