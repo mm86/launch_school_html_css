@@ -79,6 +79,16 @@ footer {
   font-size: 14px;
 }
 
+main figure {
+  float: right;
+}
+
+main:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 
 
 
