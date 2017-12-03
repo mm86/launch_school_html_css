@@ -79,8 +79,13 @@ footer {
   font-size: 14px;
 }
 
+main p {
+  padding: 0 0 27px 0;
+}
 main figure {
   float: right;
+  margin: 0 0 0 41px;
+  padding: 0 0 50px 0;
 }
 
 main:after {
@@ -88,6 +93,7 @@ main:after {
   content: "";
   clear: both;
 }
+
 
 
 
