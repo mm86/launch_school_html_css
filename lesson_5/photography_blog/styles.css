@@ -64,6 +64,16 @@ main {
   box-shadow: 0 5px 5px #b5b5b5;
 }
 
+.masthead {
+  padding: 0 0 43px 0;
+}
+
+main h2 {
+  font-size: 32px;
+  font-weight: normal;
+  padding: 0 0 35px 0;
+}
+
 footer {
   padding: 16px 0 41px;
   font-size: 14px;
