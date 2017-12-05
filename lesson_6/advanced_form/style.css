@@ -1,0 +1,89 @@
+@import url("reset.css");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #282828;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+fieldset {
+  background: #ececec;
+  border-left: 4px solid #cdcccb;
+  padding: 1.5rem 32px 2.9rem 32px;
+  margin: 2px 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  padding: 1.5rem 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding: 0 0 1.5rem 0;
+}
+
+label {
+  font-weight: bold;
+  color: #666666;
+}
+
+dt {
+  padding: 0 0 10px 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 40px;
+  border: 1px solid #2e67b2;
+  border-radius: 4px;
+  width: 100%;
+} 
+
+dl.personal_info dd {
+  display: inline-block;
+  width: 50%;
+}
+
+dl.personal_info dt:nth-of-type(2) {
+  padding: 20px 0 10px 0;
+}
+
+dl.social_media dd {
+  display: inline-block;
+  width: 33%;
+}
+
+dl.profile_name_password dd {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

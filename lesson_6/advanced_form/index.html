@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Advanced Form Layout</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Create Your Profile</h1>
+      <fieldset>
+        <h2>Personal Info</h2>
+          <dl class="personal_info">
+            <dt><label for="first_name">Your Name</label></dt>
+            <dd><input type="text" name="first_name" placeholder="First" id="first_name" /></dd><!--
+            --><dd><input type="text" name="last_name" placeholder="Last" /></dd>
+
+            <dt><label for="email">Email</label></dt>
+            <dd><input type="email" name="email" id="email" /></dd>
+          </dl>
+      </fieldset>
+
+      <fieldset>
+        <h2>Social Media Accounts</h2>
+          <dl class="social_media">
+            <dt><label for="facebook">Facebook</label></dt>
+            <dd><input type="text" name="facebook" id="facebook" /></dd>
+
+            <dt><label for="twitter">Twitter</label></dt>
+            <dd><input type="text" name="twitter" id="twitter" /></dd>
+
+            <dt><label for="linkedin">Linkedin</label></dt>
+            <dd><input type="text" name="linkedin" id="linkedin" /></dd>
+          </dl>
+      </fieldset>
+
+      <fieldset>
+        <h2>Account Info</h2>
+          <dl class="profile_name_password">
+            <dt><label for="profile_name">Profile Name</label></dt>
+            <dd><input type="text" name="profile_name" id="profile_name" /></dd>
+
+            <dt><label for="password">Password</label></dt>
+            <dd><input type="text" name="password" id="password" /></dd>
+
+            <dt><label for="confirm_password">Confirm Password</label></dt>
+            <dd><input type="text" name="confirm_password" id="confirm_password" /></dd>
+          </dl>
+      </fieldset>
+
+      <fieldset>
+        <h2>Bio</h2>
+        <textarea rows="" cols=""></textarea>
+      </fieldset>
+
+      <fieldset>
+        <p>
+          <label>
+            <input type="checkbox" name="agreement" />I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.
+          </label>
+        </p>
+        <input type="submit" value="Create Account" name="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html> 
