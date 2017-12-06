@@ -10,11 +10,17 @@ ul li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header Styling */
 
 header {
   background: url("../images/bg_body.gif") 0 0 repeat #2f2840;
   text-align: center;
 }
+
+
 
 
