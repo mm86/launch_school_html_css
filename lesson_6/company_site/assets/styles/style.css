@@ -17,15 +17,29 @@ a {
 /* Header Styling */
 
 header {
-  background: url("../images/bg_body.gif") 0 0 repeat #2f2840;
+  background: url("../images/bg_body.gif") 50% 0 repeat #2f2840;
   text-align: center;
+  padding: 75px 0 0 0;
 }
 
-header a {
+header nav {
+  padding: 105px 0 62px 0;
+}
+
+header nav ul li {
+  margin: 0 42px;
+}
+
+header nav a {
   color: #cacaca;
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 200;
+}
+
+header nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
 }
 
 
