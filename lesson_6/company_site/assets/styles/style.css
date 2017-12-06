@@ -3,7 +3,8 @@
 /* General Styling */
 
 body {
-  font: normal 20px 'Lato', sans-serif;
+  font: normal 20px 'Nunito Sans', sans-serif;
+  color: #45494d;
 }
 
 ul li {
@@ -13,6 +14,38 @@ ul li {
 a {
   text-decoration: none;
 }
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  color: #3e59b2;
+}
+
+h2:before,
+h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 22px;
+  vertical-align: 5px;
+  content: "\2022";
+}
+
+main {
+  text-align: center;
+}
+
+article {
+  width: 775px;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+}
+
 
 /* Header Styling */
 
@@ -88,6 +121,11 @@ footer ul a.instagram:before {
   background-position: 0 100%;
 }
 
+/* Home.html Styling */
+
+.home article:nth-of-type(2) {
+  padding-bottom: 106px;
+}
 
 
 
