@@ -3,7 +3,7 @@
 /* General Styling */
 
 body {
-  font: normal 20px Helvetica, Arial, sans-serif;
+  font: normal 20px 'Lato', sans-serif;
 }
 
 ul li {
@@ -23,24 +23,71 @@ header {
 }
 
 header nav {
-  padding: 105px 0 62px 0;
+  padding: 103px 0 64px 0;
 }
 
 header nav ul li {
-  margin: 0 42px;
+  margin: 0 44px;
 }
 
 header nav a {
   color: #cacaca;
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: 200;
+
 }
 
 header nav a.active {
   font-weight: bold;
   color: #6db9ff;
 }
+
+/* Footer Styling */
+
+footer {
+  background: #e7e7e7;
+  text-align: center;
+  padding: 75px 0;
+}
+
+footer ul {
+  padding-top: 40px;
+}
+
+footer ul li {
+  margin: 0 62px;
+}
+
+footer p {
+  color: #b2b2b2;
+  font-weight: 100;
+}
+
+footer ul a {
+  font-size: 0;
+}
+
+footer ul a:before {
+  display: inline-block;
+  content: "";
+  width: 46px;
+  height: 46px;
+  background: transparent url("../images/icons_social-media.png") 0 0 no-repeat; 
+}
+
+ 
+footer ul a.facebook:before {
+  background-position: 0 -46px;
+}
+
+footer ul a.email:before {
+  background-position: 0 -92px;
+}
+
+footer ul a.instagram:before {
+  background-position: 0 100%;
+}
+
 
 
 
