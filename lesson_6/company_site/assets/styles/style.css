@@ -1,1 +1,17 @@
 @import url("reset.css");
+
+/* General Styling */
+
+body {
+  font: normal 20px Helvetica, Arial, sans-serif;
+}
+
+ul li {
+  display: inline-block;
+}
+
+/* Header Styling */
+
+
+
+
