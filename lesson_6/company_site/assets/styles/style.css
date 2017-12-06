@@ -12,6 +12,9 @@ ul li {
 
 /* Header Styling */
 
-
+header {
+  background: url("../images/bg_body.gif") 0 0 repeat #2f2840;
+  text-align: center;
+}
 
 
