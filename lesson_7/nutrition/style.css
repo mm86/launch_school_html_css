@@ -25,6 +25,10 @@ h2 {
   border-bottom: 1px solid #000000;
 }
 
+dt, dd {
+  display: inline;
+}
+
 /* Header Styles */
 
 header {
@@ -38,10 +42,6 @@ header dl {
 
 header dl:nth-of-type(2) {
   float: right;
-}
-
-header dt, dd {
-  display: inline;
 }
 
 header:after {
