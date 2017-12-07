@@ -1,1 +1,67 @@
 @import url("reset.css");
+
+/* General Styles */
+
+html, body {
+  font: 28px Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+
+article {
+  border: 2px solid #000000;
+  width: 680px;
+  margin: 8px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+}
+
+/* Header Styles */
+
+header {
+  border-bottom: 15px solid #000000;
+}
+
+header dl {
+  padding: 5px 0;
+  float: left;
+}
+
+header dl:nth-of-type(2) {
+  float: right;
+}
+
+header dt, dd {
+  display: inline;
+}
+
+header:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header p:nth-of-type(2) {
+  padding-bottom: 5px;
+  border-bottom: 30px solid #000000;
+}
+
+header dl:nth-of-type(1) dt {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
