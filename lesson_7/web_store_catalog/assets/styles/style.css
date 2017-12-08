@@ -1,1 +1,87 @@
 @import url("reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #222222;
+  background: #ffd505;
+}
+
+header, main {
+  width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  background: #057ec1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+figcaption {
+  padding: 20px 0 0 0;
+}
+
+figcaption p {
+  padding-top: 5px;
+}
+
+main {
+  background: #ececec;
+  padding: 25px;
+}
+
+ul li {
+  display: inline-block;
+  background: #fff;
+  width: 23.5%;
+  margin: 0 2% 2% 0;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+
+ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+
+img {
+  display: block;
+  width: auto;
+  height: 140px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
