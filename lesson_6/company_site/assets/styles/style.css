@@ -3,8 +3,9 @@
 /* General Styling */
 
 body {
-  font: normal 20px 'Nunito Sans', sans-serif;
+  font: normal 20px 'Avenir', sans-serif;
   color: #45494d;
+  text-align: center;
 }
 
 ul li {
@@ -17,23 +18,21 @@ a {
 
 h2 {
   font-size: 36px;
-  padding-bottom: 40px;
   font-weight: bold;
+}
+
+h2:after,
+h2:before {
+  display: inline-block;
+  content: "\2022";
+  vertical-align: 5px;
+  font-size: 22px;
+  padding: 0 24px;
 }
 
 h3 {
   font-size: 24px;
-  padding-bottom: 20px;
   color: #3e59b2;
-}
-
-h2:before,
-h2:after {
-  display: inline-block;
-  padding: 0 24px;
-  font-size: 22px;
-  vertical-align: 5px;
-  content: "\2022";
 }
 
 main {
@@ -41,11 +40,9 @@ main {
 }
 
 article {
-  width: 775px;
+  width: 780px;
   margin: 0 auto;
-  padding: 100px 0 0 0;
 }
-
 
 /* Header Styling */
 
@@ -56,11 +53,11 @@ header {
 }
 
 header nav {
-  padding: 103px 0 64px 0;
+  padding: 100px 0 60px 0;
 }
 
 header nav ul li {
-  margin: 0 44px;
+  margin: 0 42.5px;
 }
 
 header nav a {
@@ -79,7 +76,6 @@ header nav a.active {
 
 footer {
   background: #e7e7e7;
-  text-align: center;
   padding: 75px 0;
 }
 
@@ -92,8 +88,8 @@ footer ul li {
 }
 
 footer p {
+  margin: 0;
   color: #b2b2b2;
-  font-weight: 100;
 }
 
 footer ul a {
@@ -107,7 +103,6 @@ footer ul a:before {
   height: 46px;
   background: transparent url("../images/icons_social-media.png") 0 0 no-repeat; 
 }
-
  
 footer ul a.facebook:before {
   background-position: 0 -46px;
@@ -121,11 +116,27 @@ footer ul a.instagram:before {
   background-position: 0 100%;
 }
 
-/* Home.html Styling */
+/* Home Page Styling */
 
-.home article:nth-of-type(2) {
-  padding-bottom: 106px;
+.home {
+  padding: 100px 0;
 }
+
+.home h2 {
+  padding-bottom: 40px;
+}
+
+.home h3 {
+  padding-bottom: 20px;
+}
+
+.home article:nth-of-type(1) {
+  margin-bottom: 100px;
+}
+
+
+
+
 
 
 
