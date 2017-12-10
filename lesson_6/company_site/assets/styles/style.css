@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 ul li {
   display: inline-block;
 }
@@ -35,11 +40,7 @@ h3 {
   color: #3e59b2;
 }
 
-main {
-  text-align: center;
-}
-
-article {
+p {
   width: 780px;
   margin: 0 auto;
 }
@@ -88,7 +89,6 @@ footer ul li {
 }
 
 footer p {
-  margin: 0;
   color: #b2b2b2;
 }
 
@@ -134,6 +134,34 @@ footer ul a.instagram:before {
   margin-bottom: 100px;
 }
 
+/* Projects Page Styling */
+
+.projects {
+  padding: 100px 0 50px 0;
+}
+
+.projects h2 {
+  padding-bottom: 40px;
+}
+
+.projects h3 {
+  padding-bottom: 20px;
+}
+
+.projects figure {
+  margin: 0 auto 20px auto;
+  padding: 0 30px;
+}
+
+.projects figure img {
+  display: block;
+  width: 100%;
+  background: yellow;
+}
+
+.projects article {
+  margin-bottom: 100px;
+}
 
 
 
