@@ -1,20 +1,14 @@
 @import url("reset.css");
 
-/* General Styling */
+/*
+  ==============================
+  General Styles
+  ==============================
+*/
 
 body {
-  font: normal 20px 'Avenir', sans-serif;
-  color: #45494d;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
-}
-
-main {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-ul li {
-  display: inline-block;
 }
 
 a {
@@ -26,13 +20,13 @@ h2 {
   font-weight: bold;
 }
 
-h2:after,
-h2:before {
+h2:before,
+h2:after {
   display: inline-block;
-  content: "\2022";
-  vertical-align: 5px;
-  font-size: 22px;
   padding: 0 24px;
+  font-size: 26px;
+  vertical-align: 3px;
+  content: "\2022";
 }
 
 h3 {
@@ -40,129 +34,236 @@ h3 {
   color: #3e59b2;
 }
 
-p {
-  width: 780px;
+main h3 {
+  padding: 26px 0 12px 0;
+}
+
+main p {
+  width: 800px;
   margin: 0 auto;
 }
 
-/* Header Styling */
+/*
+  ==============================
+  Header
+  ==============================
+*/
 
 header {
-  background: url("../images/bg_body.gif") 50% 0 repeat #2f2840;
-  text-align: center;
-  padding: 75px 0 0 0;
+  background: #2f2840 url('../images/bg_body.gif') 0 0 repeat;
+  padding: 135px 0 0 0;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
 }
 
 header nav {
-  padding: 100px 0 60px 0;
+  padding: 115px 0 40px 0;
 }
 
 header nav ul li {
-  margin: 0 42.5px;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 header nav a {
   color: #cacaca;
   text-transform: uppercase;
-  font-size: 24px;
-
+  font-size: 26px;
 }
 
 header nav a.active {
-  font-weight: bold;
   color: #6db9ff;
+  font-weight: bold;
 }
 
-/* Footer Styling */
+header nav ul li:last-child {
+  padding: 0 22px;
+}
+
+header nav ul {
+  margin-left: -36px;
+}
+
+/*
+  ==============================
+  Home Page
+  ==============================
+*/
+
+#home {
+  padding: 114px 0 139px 0;
+}
+
+#home article:nth-of-type(2) {
+  margin-top: 145px;
+}
+
+#home article:nth-of-type(2) h2 {
+  padding: 0 0 40px 0;
+}
+
+/*
+  ==============================
+  Projects Page
+  ==============================
+*/
+
+#projects {
+  padding: 114px 0 132px 0;
+}
+
+#projects h2 {
+  padding-bottom: 32px;
+}
+
+#moment {
+  margin-top: 114px;
+}
+
+#map {
+  margin-top: 120px;
+}
+
+#app figure {
+  padding-bottom: 10px;
+}
+
+#moment figure,
+#map figure {
+  padding-bottom: 22px;
+}
+
+/*
+  ==============================
+  Teams Page
+  ==============================
+*/
+
+#team {
+  padding: 114px 0 226px 0;
+}
+
+#team p {
+  padding: 30px 0 127px 0;
+}
+
+#team ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+#team h3 {
+  font-weight: normal;
+  padding: 0;
+}
+
+figcaption {
+  font-size: 24px;
+  color: #3e59b2;
+  padding-top: 22px;
+}
+
+.overlay {
+  visibility: hidden;
+  width: 828px;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 675px;
+  left: 50%;
+  margin-left: -414px;
+  padding: 124px 86px 108px 86px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.overlay p {
+  font-size: 20px;
+  color: #45494d;
+  text-align: justify;
+  padding: 35px 0 0 0 !important;
+  width: auto;
+}
+
+.team-image,
+.overlay h3 {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.team-image {
+  width: 96px;
+}
+
+.overlay h3 {
+  padding-left: 28px;
+}
+
+.overlay:target {
+  visibility: visible;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+}
+
+
+/*
+  ==============================
+  Footer
+  ==============================
+*/
 
 footer {
   background: #e7e7e7;
-  padding: 75px 0;
+  padding: 82px 0 65px 0;
+  color: #b2b2b2;
 }
 
 footer ul {
+  font-size: 0;
   padding-top: 40px;
 }
 
 footer ul li {
-  margin: 0 62px;
-}
-
-footer p {
-  color: #b2b2b2;
-}
-
-footer ul a {
-  font-size: 0;
-}
-
-footer ul a:before {
   display: inline-block;
+  padding: 0 62px;
+}
+
+footer ul li a:before {
   content: "";
+  display: inline-block;
   width: 46px;
   height: 46px;
-  background: transparent url("../images/icons_social-media.png") 0 0 no-repeat; 
+  background: url(../images/icons_social-media.png) 0 0 no-repeat;
 }
- 
-footer ul a.facebook:before {
+
+footer ul li a.facebook:before {
   background-position: 0 -46px;
 }
 
-footer ul a.email:before {
+footer ul li a.email:before {
   background-position: 0 -92px;
 }
 
-footer ul a.instagram:before {
+footer ul li a.instagram:before {
   background-position: 0 100%;
 }
 
-/* Home Page Styling */
-
-.home {
-  padding: 100px 0;
+footer p {
+  line-height: 28px;
 }
 
-.home h2 {
-  padding-bottom: 40px;
+.team {
+  padding-top: 68px;
 }
-
-.home h3 {
-  padding-bottom: 20px;
-}
-
-.home article:nth-of-type(1) {
-  margin-bottom: 100px;
-}
-
-/* Projects Page Styling */
-
-.projects {
-  padding: 100px 0 50px 0;
-}
-
-.projects h2 {
-  padding-bottom: 40px;
-}
-
-.projects h3 {
-  padding-bottom: 20px;
-}
-
-.projects figure {
-  margin: 0 auto 20px auto;
-  padding: 0 30px;
-}
-
-.projects figure img {
-  display: block;
-  width: 100%;
-  background: yellow;
-}
-
-.projects article {
-  margin-bottom: 100px;
-}
-
 
 
 
