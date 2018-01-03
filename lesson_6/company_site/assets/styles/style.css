@@ -34,12 +34,17 @@ h3 {
   color: #3e59b2;
 }
 
+main {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
 main h3 {
   padding: 26px 0 12px 0;
 }
 
 main p {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -48,6 +53,16 @@ main p {
   Header
   ==============================
 */
+
+
+h1 a {
+  display: block;
+  width: 298px;
+  height: 243px;
+  margin: 0 auto;
+  text-indent: -9000px;
+  background: transparent url("../images/logo.png") 0 0 no-repeat
+}
 
 header {
   background: #2f2840 url('../images/bg_body.gif') 0 0 repeat;
@@ -118,6 +133,14 @@ header nav ul {
 #projects h2 {
   padding-bottom: 32px;
 }
+#projects figure {
+  padding: 28px;
+}
+
+#projects figure img {
+  display: block;
+  width: 100%;
+}
 
 #moment {
   margin-top: 114px;
@@ -153,6 +176,7 @@ header nav ul {
 #team ul li {
   display: inline-block;
   padding: 0 30px;
+  box-sizing: border-box;
 }
 
 #team h3 {
@@ -257,13 +281,267 @@ footer ul li a.instagram:before {
   background-position: 0 100%;
 }
 
-footer p {
-  line-height: 28px;
+
+/*
+  ==============================
+  MEDIA QUERIES
+  ==============================
+*/
+
+/*
+  ==============================
+  Media Queries - 875px
+  ==============================
+*/
+
+
+@media (max-width: 875px) {
+
+  #team li {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+
+  #team figcaption {
+    padding: 0;
+  }
+
 }
 
-.team {
-  padding-top: 68px;
+/*
+  ==============================
+  Media Queries - 768px
+  ==============================
+*/
+
+@media (max-width: 768px) {
+
+  /* General Styles */
+
+  main p {
+    text-align: justify;
+    padding: 0 40px;
+  }
+
+  h2:before,
+  h2:after {
+    display: inline-block;
+    padding: 0 24px;
+    font-size: 22px;
+    vertical-align: 5px;
+    content: "\2022";
+  }
+
+  /* Header & Footer */
+
+  header {
+    background-position: 50% 0;
+    padding: 72px 0 0 0;
+  }
+
+  header nav {
+    padding: 30px 0 24px 0;
+  }
+
+  header nav a {
+    font-size: 24px;
+  }
+
+  header nav ul {
+    margin: 0;
+  }
+
+  header nav ul li {
+    padding: 0 42.5px;
+  }
+
+  header nav ul li:last-child {
+    padding: 0 42.5px;
+  }
+
+  h1 a {
+    width: 223px;
+    height: 182px;
+    background-size: cover;
+  }
+
+  footer {
+    padding: 55px 0 42px 0;
+  }
+
+  footer ul {
+    padding-top: 60px;
+  }
+
+  footer ul li {
+    padding: 0 35px;
+  }
+
+  /* Home Page */
+
+  #home {
+    padding: 70px 0 80px 0;
+  }
+
+  #home article:nth-of-type(2) {
+    margin-top: 100px;
+  }
+
+  /* Projects Page */
+
+  #projects {
+    padding: 70px 0 132px 0;
+  }
+
+  #projects h2 {
+    padding-bottom: 0;
+  }
+
+  #projects figure {
+    padding: 30px 30px 18px 30px;
+  }
+
+  #projects p {
+    padding: 11px 30px 0 30px;
+  }
+
+  /* Team Page */
+
+  #team {
+    padding: 70px 0 110px 0;
+  }
+
+  #team p {
+    padding: 30px 110px 0 110px;
+  }
+
+  #team ul {
+    padding-top: 120px;
+  }
+
 }
+
+/*
+  ==============================
+  Media Queries - 480px
+  ==============================
+*/
+
+@media (max-width: 480px) {
+
+  /* General Styles */
+
+  body {
+    font-size: 16px;
+  }
+
+  h2:before,
+  h2:after {
+    display: inline-block;
+    padding: 0 24px;
+    font-size: 22px;
+    vertical-align: 0;
+    content: "\2022";
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  /* Header & Footer */
+
+
+  header {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    float: left;
+    margin: 20px 0 0 0;
+  }
+
+  h1 a {
+    width: auto;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    text-indent: 0;
+    font-size: 22px;
+    color: #fff;
+    background-position: -20px 0;
+    background-size: 90px auto;
+  }
+
+  header nav {
+    padding: 5px 0;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  header nav ul li {
+    display: block;
+    padding: 0 0 10px 0;
+  }
+
+  header nav ul li:last-child {
+    padding: 0;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 0 25px 0;
+  }
+
+  footer ul {
+    padding-top: 55px;
+  }
+
+  footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  /* Home Page */
+
+  /* Projects Page */
+
+  #projects {
+    padding-bottom: 60px;
+  }
+
+  /* Team Page */
+
+  #team p {
+    padding: 30px 30px 0 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
